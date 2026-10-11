@@ -300,3 +300,13 @@ footer {
     transition: none;
   }
 }
+@media (max-width: 600px) {
+  .stage:has(.overlay:not(.hidden)) canvas {
+    display: none;
+  }
+  .overlay {
+    position: relative;
+    min-height: 350px;
+    justify-content: center;
+  }
+}

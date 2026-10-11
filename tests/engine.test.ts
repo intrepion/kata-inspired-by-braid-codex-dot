@@ -217,3 +217,12 @@ test("completed hour rejects further simulation and restart permits fresh play",
   assert.ok(e.state.player.x > 65);
   assert.equal(e.complete, false);
 });
+test("lingering in a vault never erases the route back to the room origin", () => {
+  const e = new Engine();
+  retrieve(e, 320);
+  run(e, HISTORY_LIMIT + 100);
+  run(e, HISTORY_LIMIT, { rewind: true });
+  assert.equal(e.state.player.x, 65);
+  assert.equal(e.state.player.y, 318);
+  assert.equal(e.memories.size, 1);
+});

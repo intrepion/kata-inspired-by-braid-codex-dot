@@ -21,6 +21,8 @@ try {
     el("notice").textContent =
       "An unreadable save was ignored. A new journey is ready.";
 } catch {
+  el("notice").textContent =
+    "Storage unavailable. You can still play, but this visit will not save.";
   saveFailed = true;
 }
 function clear() {
@@ -159,7 +161,7 @@ function release() {
 document.addEventListener("keydown", (ev) => {
   if (mapping[ev.code]) {
     ev.preventDefault();
-    if (mode === "playing") {
+    if (mode === "playing" && (!ev.repeat || keys.has(ev.code))) {
       keys.add(ev.code);
       sync();
     }

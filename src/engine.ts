@@ -199,7 +199,8 @@ export class Engine {
     this.jumpHeld = !!input.jump;
     if (this.state.dead) return;
     this.history.push(clone(this.state));
-    if (this.history.length > HISTORY_LIMIT) this.history.shift();
+    // Retain the room origin even after the rolling past fills up.
+    if (this.history.length > HISTORY_LIMIT) this.history.splice(1, 1);
     const p = this.state.player;
     this.state.time++;
     p.coyote = p.grounded ? 6 : Math.max(0, p.coyote - 1);
