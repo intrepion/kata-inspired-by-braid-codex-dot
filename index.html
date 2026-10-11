@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101d2b" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='32'%3E⌛%3C/text%3E%3C/svg%3E"
+    />
+    <title>The Hours We Keep</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="brand">
+          IONA'S OBSERVATORY <span>AN ORIGINAL TEMPORAL TALE</span>
+        </div>
+        <button id="sound" aria-pressed="false">Sound off</button>
+      </header>
+      <main>
+        <div class="heading">
+          <div>
+            <p class="eyebrow" id="chapter">A GARDEN OUTSIDE TIME</p>
+            <h1>The Hours We Keep</h1>
+          </div>
+          <div class="status" id="status">Four lost hours. One way home.</div>
+        </div>
+        <section class="stage" aria-label="Puzzle platformer">
+          <canvas
+            id="game"
+            width="960"
+            height="640"
+            aria-label="Iona's observatory. Use the labeled movement and rewind controls below."
+          ></canvas>
+          <div id="overlay" class="overlay"></div>
+          <div class="rewind-label" id="reversing">REVERSING TIME</div>
+        </section>
+        <div class="timeline">
+          <span id="time-label">YOUR PAST</span>
+          <div class="track"><div id="history"></div></div>
+          <span>30 s</span>
+        </div>
+        <div class="toolbar">
+          <div class="movement">
+            <button data-hold="left" aria-label="Move left">←</button
+            ><button data-hold="right" aria-label="Move right">→</button
+            ><button data-hold="jump" aria-label="Jump">Jump ↑</button
+            ><button
+              class="amber"
+              data-hold="rewind"
+              aria-label="Hold to rewind time"
+            >
+              Hold to rewind ↶
+            </button>
+          </div>
+          <div>
+            <button id="pause">Pause</button
+            ><button id="restart">Restart hour</button>
+          </div>
+        </div>
+        <aside>
+          <p id="rule">The blue world forgets. Amber remembers.</p>
+          <p class="keys">
+            Move <kbd>A</kbd><kbd>D</kbd> / <kbd>←</kbd><kbd>→</kbd> · Jump
+            <kbd>Space</kbd> · Rewind <kbd>R</kbd> / <kbd>Shift</kbd> · Pause
+            <kbd>Esc</kbd>
+          </p>
+        </aside>
+        <p id="notice" role="status" aria-live="polite"></p>
+        <footer>
+          Keep what matters. Let the rest return.
+          <span>Progress saves on this device.</span>
+        </footer>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
