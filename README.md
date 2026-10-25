@@ -51,3 +51,7 @@ GitHub Actions runs strict type checking, all public engine behavior tests, prod
 Strict TypeScript, Vite, Canvas 2D and Web Audio. Game rules in `src/engine.ts` do not depend on DOM or audio. A fixed 60 Hz step bounds frame catch-up; rewind restores snapshots and drops abandoned future states. Amber progress lives outside those snapshots. Saved values are validated before use. No production teleport, autoplay or debug completion shortcuts are exposed.
 
 Canvas play requires vision; labeled controls, readable text, keyboard input, pause and reduced decorative motion are included, but this is not a fully nonvisual game. Physical touch devices and audible output have not been tested.
+
+## Play online
+
+[Play the hosted game](https://intrepion.github.io/kata-inspired-by-braid-codex-dot/)
