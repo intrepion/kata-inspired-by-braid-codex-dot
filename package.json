@@ -7,9 +7,10 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
-    "test": "node --import tsx --test tests/*.test.ts",
+    "test": "node --import tsx --test tests/*.test.ts && node scripts/verify-arcade.mjs",
     "check": "npm run typecheck && npm test && npm run build",
-    "start": "node scripts/serve.mjs"
+    "start": "node scripts/serve.mjs",
+    "check:arcade": "node scripts/verify-arcade.mjs"
   },
   "devDependencies": {
     "@types/node": "^24.10.0",

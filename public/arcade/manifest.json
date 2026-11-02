@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "gameId": "kata-inspired-by-braid-codex-dot",
+  "playUrl": "https://intrepion.github.io/kata-inspired-by-braid-codex-dot/",
+  "screenshots": [
+    {
+      "path": "arcade/screenshots/view-01.jpg",
+      "sha256": "38129ee182fac79cfa737a73539651857af43559504922041a24595aea678c54",
+      "alt": "A character among moonlit platforms",
+      "provenance": {
+        "kind": "existing_repository_capture",
+        "sourcePath": "artifacts/gameplay.jpg",
+        "deployedBuild": null,
+        "captureDate": null
+      }
+    },
+    {
+      "path": "arcade/screenshots/view-02.jpg",
+      "sha256": "21173c47db45e18716d8816b88818f8668c03ea36937098f679d3fdf67f4af4c",
+      "alt": "A moonlit platform scene during a rewind",
+      "provenance": {
+        "kind": "existing_repository_capture",
+        "sourcePath": "artifacts/rewind-return.jpg",
+        "deployedBuild": null,
+        "captureDate": null
+      }
+    }
+  ]
+}

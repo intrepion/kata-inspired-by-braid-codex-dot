@@ -55,3 +55,7 @@ Canvas play requires vision; labeled controls, readable text, keyboard input, pa
 ## Play online
 
 [Play the hosted game](https://intrepion.github.io/kata-inspired-by-braid-codex-dot/)
+
+## Arcade metadata
+
+See [docs/arcade-metadata.md](docs/arcade-metadata.md) for the game-owned manifest, screenshot provenance, and verification command.
