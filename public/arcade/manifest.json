@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "gameId": "kata-inspired-by-braid-codex-dot",
   "playUrl": "https://intrepion.github.io/kata-inspired-by-braid-codex-dot/",
   "screenshots": [
@@ -23,6 +23,46 @@
         "sourcePath": "artifacts/rewind-return.jpg",
         "deployedBuild": null,
         "captureDate": null
+      }
+    },
+    {
+      "path": "arcade/screenshots/ci-20261102-01.jpg",
+      "sha256": "3f1963210ed8d507b317ff10225eb148fb141757a6e07c1d8e2cdbc5fb7b61f9",
+      "alt": "The Hours We Keep gameplay, view 1",
+      "provenance": {
+        "kind": "ci_gameplay_capture",
+        "sourcePath": "arcade/capture-evidence/ci-20261102-01.png",
+        "sourceSha256": "cc37f3dd1489e9e07705892b4c6bd8e9936e8b209bbab9122ab6e89de1576b43",
+        "captureCommit": "3cdfee13618eeb56ff3168ae03896581e5ae38df",
+        "workflowRunId": "41434893200",
+        "inputHashes": {
+          "index.html": "e848fa2491132f23e02254c905e22931cbb91c57686d50bbd38f28f24639535a",
+          "assets/index-7AXgBUEM.js": "324db8b09bc47298ad843d5bcfdf8acf12a9ca13d159c60ef862c106613a08eb",
+          "assets/index-Bnw6O7u5.css": "ed45a0588a18dea2da65df65eb17d0c6f53342e3f42b359d4db4f158949cc9b5"
+        },
+        "publishedFilesVerifiedAt": "2026-11-02T19:01:20Z",
+        "captureRecordPath": "arcade/capture-evidence/ci-20261102-record.json",
+        "captureRecordSha256": "912eb9da246762150572a565ecf361073d8a9cea0500d2f9c35dacc2bf7acd1d"
+      }
+    },
+    {
+      "path": "arcade/screenshots/ci-20261102-02.jpg",
+      "sha256": "e465809468a2435563b10b9f3fdc8683b5a7e3751ffc00e950d74bbdd2f1aad3",
+      "alt": "The Hours We Keep gameplay, view 2",
+      "provenance": {
+        "kind": "ci_gameplay_capture",
+        "sourcePath": "arcade/capture-evidence/ci-20261102-02.png",
+        "sourceSha256": "3e6bdef284afa47518453a747fde916b69bbbefdd1ff3f0a68b912261627a265",
+        "captureCommit": "3cdfee13618eeb56ff3168ae03896581e5ae38df",
+        "workflowRunId": "41434893200",
+        "inputHashes": {
+          "index.html": "e848fa2491132f23e02254c905e22931cbb91c57686d50bbd38f28f24639535a",
+          "assets/index-7AXgBUEM.js": "324db8b09bc47298ad843d5bcfdf8acf12a9ca13d159c60ef862c106613a08eb",
+          "assets/index-Bnw6O7u5.css": "ed45a0588a18dea2da65df65eb17d0c6f53342e3f42b359d4db4f158949cc9b5"
+        },
+        "publishedFilesVerifiedAt": "2026-11-02T19:01:20Z",
+        "captureRecordPath": "arcade/capture-evidence/ci-20261102-record.json",
+        "captureRecordSha256": "912eb9da246762150572a565ecf361073d8a9cea0500d2f9c35dacc2bf7acd1d"
       }
     }
   ]
